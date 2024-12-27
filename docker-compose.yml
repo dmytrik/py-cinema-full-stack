@@ -23,3 +23,8 @@ services:
       - "5432:5432"
     env_file:
       - .env
+    volumes:
+      - my_db:/var/lib/postgresql/data
+
+volumes:
+  my_db:
